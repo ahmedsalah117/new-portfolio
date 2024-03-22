@@ -8,7 +8,7 @@ import food from "./images/food.PNG";
 import crud from "./images/crud.PNG";
 import expenses from "./images/expenses.PNG";
 import bankistAdvanced from "./images/bankist-advanced.jpg";
-import figma2 from "./images/Figma_clone_pic_2.JPG";
+import figma2 from "./images/Figma_clone_pic_2.jpg";
 
 export const skills = [
   "Html",
