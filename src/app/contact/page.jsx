@@ -50,7 +50,7 @@ const ContactPage = () => {
           <div>
             {text.split("").map((letter, index) => (
               <motion.span
-                key={index+letter+ Math.random()*500000}
+                key={index + letter + Math.random() * 500000}
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
                 transition={{
@@ -73,9 +73,6 @@ const ContactPage = () => {
         >
           <span className="">Dear Ahmed Bahnasy,</span>
           <textarea
-            onClick={(e) => {
-              console.log("textarea clicked");
-            }}
             rows={6}
             autoFocus
             required

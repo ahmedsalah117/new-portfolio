@@ -1,10 +1,8 @@
-'use client'
-import Image from "next/image.js";
-import {motion} from "framer-motion"
+"use client";
+import { motion } from "framer-motion";
 import { useRouter } from "next/navigation.js";
-import Link from "next/link.js";
 const Homepage = () => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <motion.div
       className="h-full"
@@ -20,7 +18,6 @@ const Homepage = () => {
             <img
               src={"/hero.jpg"}
               alt="bahnasy image"
-         
               quality={100}
               className=" object-cover w-full h-full"
             />

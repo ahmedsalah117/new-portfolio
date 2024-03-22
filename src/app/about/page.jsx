@@ -3,20 +3,16 @@ import React, { useRef } from "react";
 import { motion, useInView, useScroll } from "framer-motion";
 import Brain from "../../components/Brain.jsx";
 import { skills, experience } from "../../constants/index.js";
-import Link from "next/link.js";
-
-
 
 const AboutPage = () => {
-  const containerRef = useRef()
-  const { scrollYProgress } = useScroll({ container: containerRef })
-  
+  const containerRef = useRef();
+  const { scrollYProgress } = useScroll({ container: containerRef });
+
   const skillRef = useRef();
   const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
   const experienceRef = useRef();
   const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
-  
 
   return (
     <motion.div
@@ -46,8 +42,8 @@ const AboutPage = () => {
             {/* Biography quote */}
 
             <span className="italic">
-              "The how to do it always comes to the person who believes he can
-              do it."
+              &quot;The how to do it always comes to the person who believes he
+              can do it.&quot;
             </span>
             {/* Biography signature */}
             <div className="self-end">
@@ -103,7 +99,7 @@ const AboutPage = () => {
               Scroll down
             </motion.p>
           </div>
-         
+
           {/* Skills container */}
           <div className="flex flex-col gap-12 justify-center" ref={skillRef}>
             {/* Skills title */}
@@ -187,7 +183,10 @@ const AboutPage = () => {
               {experience.map((item, index) => {
                 if ((index + 1) % 2 !== 0) {
                   return (
-                    <div key={index + Math.random()*500000} className="flex justify-between h-auto">
+                    <div
+                      key={index + Math.random() * 500000}
+                      className="flex justify-between h-auto"
+                    >
                       {/* left */}
                       <div className="w-1/3">
                         {/* Job title */}
@@ -254,7 +253,10 @@ const AboutPage = () => {
                         <ul className="mt-5 list-disc ml-5 space-y-2">
                           {item.jobDesc.map((point, index) => (
                             <li
-                              key={`experience-point-${index}`+ Math.random()*500000}
+                              key={
+                                `experience-point-${index}` +
+                                Math.random() * 500000
+                              }
                               className="text-white-100 text-sm pl-1 tracking-wider hyphens-auto"
                             >
                               {point}
