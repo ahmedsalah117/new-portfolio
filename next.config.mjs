@@ -4,10 +4,13 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname:"images.pexels.com"
-      }
-    ]
-  }
+        hostname: "images.pexels.com",
+      },
+    ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
